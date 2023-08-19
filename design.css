@@ -1,0 +1,99 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing:border-box;
+}
+html,body{
+    width:100%;
+    height:100%;
+}
+.maindiv{
+background-color: rgb(236, 145, 162);
+height:100%;
+width:100%;
+justify-content:center;
+align-items:center;
+display:flex;
+}
+.panel{
+    height:75%;
+    background-color: rgb(221, 200, 200);
+    width:70%;
+    border-radius:10px;
+    overflow:hidden;
+    
+}
+.scoreboard{
+    background-color: rgb(147, 40, 55);
+    height:90px;
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0px 30%
+    
+}
+.elem{
+   display:flex; 
+   gap:10px;
+   color:rgb(64, 1, 13);
+   text-align: center;
+}
+.box{
+    background-color:rgb(206, 183, 183);
+    padding:10px 20px;
+    border-radius: 5px;
+   color:rgb(104, 17, 33);
+   font-weight: bolder;
+}
+.panelbtm{
+    height: calc(100% - 90px);
+    width:100%;
+    padding:20px 10px;
+    display:flex;
+    gap:8px;
+    flex-wrap:wrap;
+    
+}
+.bubble{
+     background-color: rgb(114, 34, 49);
+     height:40px;
+     width:40px;
+     border-radius: 50%;
+     align-items: center;
+     justify-content: center;
+     display:flex;
+     color: rgb(200, 178, 178);
+     cursor:pointer;
+}
+.bubble:hover{
+background-color: rgb(55, 6, 6);
+}
+.styling{
+    width:30%;
+    height:90px;
+    background-color:rgb(221, 200, 200);
+    align-items:center;
+    justify-content: center;
+    display: flex;
+    border-radius:50%;
+    font-weight:bolder;
+    font-size:xx-large;
+    animation-name:slide-in,examples;
+    animation-duration: 10s;
+    animation-direction:reverse;
+    animation-timing-function:linear;
+    color:rgb(221, 200, 200);
+}
+
+@keyframes slide-in {
+    0%{
+        transform:translate(1100px,500px);
+    }
+    
+}
+@keyframes examples {
+    0%{
+    color:rgb(0, 0, 0);        
+    }
+}
